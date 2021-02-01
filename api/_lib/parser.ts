@@ -52,13 +52,13 @@ function getArray(stringOrArray: string[] | string | undefined): string[] {
 
 function getDefaultImages(images: string[], theme: Theme): string[] {
     const defaultImage = theme === 'light'
-        ? 'https://cdn.paramdeo.com/img/profile.png'
-        : 'https://cdn.paramdeo.com/img/profile.png';
+        ? 'https://images.paramdeo.com/profile.png'
+        : 'https://images.paramdeo.com/profile.png';
 
     if (!images || !images[0]) {
         return [defaultImage];
     }
-    if (!images[0].startsWith('https://cdn.paramdeo.com/') && !images[0].startsWith('https://paramdeo.netlify.app/')) {
+    if (!images[0].startsWith('https://images.paramdeo.com/') && !images[0].startsWith('https://paramdeo.netlify.app/')) {
         images[0] = defaultImage;
     }
     return images;
