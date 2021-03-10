@@ -142,12 +142,12 @@ const markdownOptions: DropdownOption[] = [
 ];
 
 const imageLightOptions: DropdownOption[] = [
-    { text: 'Paramdeo', value: 'https://images.paramdeo.com/favicon.png' },
+    { text: 'Paramdeo', value: 'https://images.paramdeo.com/profile.png' },
 ];
 
 const imageDarkOptions: DropdownOption[] = [
 
-    { text: 'Paramdeo', value: 'https://images.paramdeo.com/favicon.png' },
+    { text: 'Paramdeo', value: 'https://images.paramdeo.com/profile.png' },
 ];
 
 const widthOptions = [
@@ -374,7 +374,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
                         label: `Add Image ${images.length + 1}`,
                         onclick: () => {
                             const nextImage = images.length === 1
-                                ? 'https://images.paramdeo.com/favicon.png'
+                                ? 'https://images.paramdeo.com/profile.png'
                                 : '';
                             setLoadingState({ images: [...images, nextImage] })
                         }

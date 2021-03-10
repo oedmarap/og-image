@@ -52,8 +52,8 @@ function getArray(stringOrArray: string[] | string | undefined): string[] {
 
 function getDefaultImages(images: string[], theme: Theme): string[] {
     const defaultImage = theme === 'light'
-        ? 'https://images.paramdeo.com/favicon.png'
-        : 'https://images.paramdeo.com/favicon.png';
+        ? 'https://images.paramdeo.com/profile.png'
+        : 'https://images.paramdeo.com/profile.png';
 
     if (!images || !images[0]) {
         return [defaultImage];
